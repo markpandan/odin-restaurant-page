@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+}
+
+body {
+}
+
+header {
+  display: flex;
+  justify-content: end;
+}
