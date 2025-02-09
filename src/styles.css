@@ -23,15 +23,21 @@ header {
 }
 
 #content {
-  margin-top: 24px;
-
+  margin: 24px auto 0;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  width: 80%;
 }
 
 .tab-buttons {
   text-align: center;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .hero {
@@ -62,4 +68,32 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.history-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.profile-container > div {
+  /* flex: 1; */
+}
+
+.profile-container > article {
+  width: min(100%, 750px);
+  /* flex: 2; */
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: max(125px, 250px);
+  height: max(125px, 250px);
+  background-color: whitesmoke;
+}
+
+@media (max-width: 768px) {
+  #content {
+    width: 100%;
+  }
 }
