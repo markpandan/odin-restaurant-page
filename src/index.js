@@ -1,5 +1,6 @@
 import backgroundPage from "./pages/background.js";
 import menuPage from "./pages/menu.js";
+import contactPage from "./pages/contact.js";
 
 import "./styles.css";
 
@@ -14,9 +15,11 @@ menuButton.addEventListener("click", () => {
 const backgroundButton = document.querySelector("#background-button");
 backgroundButton.addEventListener("click", () => {
   content.textContent = "";
-  console.log(...backgroundPage());
   content.append(...backgroundPage());
 });
 
 const contactButton = document.querySelector("#contact-button");
-contactButton.addEventListener("click", () => {});
+contactButton.addEventListener("click", () => {
+  content.textContent = "";
+  content.appendChild(...contactPage());
+});
